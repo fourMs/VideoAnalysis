@@ -38,6 +38,7 @@ A: This depends on many factors. The best is to use uncompressed video, but this
 
 Claudia Mauléon and Esteban Etcheverry have written a [short overview](https://www.hf.uio.no/ritmo/english/groups/fourms/software/VideoAnalysis/downloads/Dumies_Tutorial.pdf) of their experiences with working with VideoAnalysis on Windows.
 
+
 ## History
 
 This software started out the [Musical Gestures Toolbox for Max](http://www.uio.no/english/research/groups/fourms/downloads/software/musicalgesturestoolbox/) in 2004, and later became integrated as the first collection of video modules in the [Jamoma](http://www.jamoma.org) project.
@@ -49,6 +50,12 @@ The software is currently maintained by the [fourMs lab](https://github.com/four
 ## Credits
 
 Main developers: [Alexander Refsum Jensenius](http://people.uio.no/alexanje).
+
+## Reference
+
+If you use this toolbox for research purposes, please reference this publication: 
+
+- Jensenius, Alexander Refsum (2005). [Developing Tools for Studying Musical Gestures within the Max/MSP/Jitter Environment](https://www.duo.uio.no/handle/10852/26907). Proceedings of the International Computer Music Conference, p. 282-285. 
 
 ## License
 
