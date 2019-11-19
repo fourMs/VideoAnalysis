@@ -19,9 +19,8 @@ Please see the wiki page about how to use the exported data.
 
 ## Demonstration
 
-A quick video demonstrating how the program works:
+See [this video](https://www.youtube.com/embed/vvuiir2vDfQ) for a demonstrating of how the program works. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vvuiir2vDfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## FAQ
 
@@ -38,3 +37,19 @@ Q: What type of video compression should I use?
 A: This depends on many factors. The best is to use uncompressed video, but this is usually not practically possible. Second best is to use a file format that compresses the video on a per frame basis, e.g. Motion JPEG (MJPEG). Other compression types, e.g. MPEG-1/2/4 use keyframes for compression. That said, we often use MPEG-4 (H.264) compression, since this gives a high visual quality and small file size.
 
 Claudia Mauléon and Esteban Etcheverry have written a [short overview](https://www.hf.uio.no/ritmo/english/groups/fourms/software/VideoAnalysis/downloads/Dumies_Tutorial.pdf) of their experiences with working with VideoAnalysis on Windows.
+
+## History
+
+This software started out the [Musical Gestures Toolbox for Max](http://www.uio.no/english/research/groups/fourms/downloads/software/musicalgesturestoolbox/) in 2004, and later became integrated as the first collection of video modules in the [Jamoma](http://www.jamoma.org) project.
+
+Much of the functionality was ported to the [Musical Gestures Toolbox for Matlab](https://github.com/fourMs/MGT-matlab/) and later also [Musical Gestures Toolbox for Python](https://github.com/fourMs/MGT-python).
+
+The software is currently maintained by the [fourMs lab](https://github.com/fourMs) at [RITMO Centre for Interdisciplinary Studies in Rhythm, Time and Motion](https://www.uio.no/ritmo/english/) at the University of Oslo.
+
+## Credits
+
+Main developers: [Alexander Refsum Jensenius](http://people.uio.no/alexanje).
+
+## License
+
+This software is open source, and is shared with [The GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
