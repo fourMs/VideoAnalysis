@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
+			"major" : 8,
+			"minor" : 1,
 			"revision" : 1,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 72.0, 79.0, 640.0, 480.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 72.0, 85.0, 237.0, 221.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -45,8 +46,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 50.0, 243.0, 47.0, 21.0 ],
-					"style" : "",
+					"patching_rect" : [ 8.0, 154.0, 47.0, 21.0 ],
 					"text" : "route a"
 				}
 
@@ -54,14 +54,13 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Sans Serif",
-					"fontsize" : 9.160198,
+					"fontsize" : 9.160197999999999,
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 178.0, 100.0, 38.0, 19.0 ],
-					"style" : "",
+					"patching_rect" : [ 160.0, 16.0, 39.0, 20.0 ],
 					"text" : "r reset"
 				}
 
@@ -69,14 +68,13 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Sans Serif",
-					"fontsize" : 9.160198,
+					"fontsize" : 9.160197999999999,
 					"id" : "obj-13",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 116.0, 100.0, 64.0, 19.0 ],
-					"style" : "",
+					"patching_rect" : [ 74.0, 16.0, 64.0, 20.0 ],
 					"text" : "r clear-stats"
 				}
 
@@ -90,8 +88,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "clear" ],
-					"patching_rect" : [ 116.0, 124.0, 42.0, 21.0 ],
-					"style" : "",
+					"patching_rect" : [ 74.0, 53.0, 42.0, 21.0 ],
 					"text" : "t clear"
 				}
 
@@ -104,11 +101,10 @@
 					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 6,
-					"outlettype" : [ "int", "float", "float", "float", "float", "" ],
-					"patching_rect" : [ 88.0, 151.0, 115.0, 21.0 ],
-					"style" : "",
-					"text" : "j.stats @windowed 0"
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 35.799999999999997, 92.0, 130.199999999999989, 21.0 ],
+					"text" : "mgt.stats"
 				}
 
 			}
@@ -121,8 +117,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.0, 204.0, 107.0, 21.0 ],
-					"style" : "",
+					"patching_rect" : [ 8.0, 126.0, 158.0, 21.0 ],
 					"text" : "pack a 0 0. 0. 0. 0."
 				}
 
@@ -131,12 +126,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-11",
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 8.0, 13.5, 25.0, 25.0 ]
 				}
 
 			}
@@ -144,12 +139,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-21",
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 88.0, 40.0, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 35.799999999999997, 13.5, 25.0, 25.0 ]
 				}
 
 			}
@@ -157,11 +152,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-26",
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 322.0, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 8.0, 186.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -169,8 +164,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 5 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 4 ]
 				}
 
@@ -178,8 +171,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 4 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 3 ]
 				}
 
@@ -187,8 +178,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 2 ]
 				}
 
@@ -196,8 +185,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 1 ]
 				}
 
@@ -205,8 +192,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -214,8 +199,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -223,8 +206,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -232,8 +213,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -241,8 +220,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -250,8 +227,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -259,8 +234,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -268,16 +241,24 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.stats.mxo",
-				"type" : "iLaX"
+				"name" : "mgt.stats.maxpat",
+				"bootpath" : "~/Documents/GitHub/VideoAnalysis/source",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "calcStats.gendsp",
+				"bootpath" : "~/Documents/GitHub/VideoAnalysis/source",
+				"patcherrelativepath" : ".",
+				"type" : "gDSP",
+				"implicit" : 1
 			}
  ],
 		"autosave" : 0
