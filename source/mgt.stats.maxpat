@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1.9375, 302.0, 70.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -52,11 +64,11 @@
 				"box" : 				{
 					"comment" : "\"clear\" to reset stats; float/int to calculate stats",
 					"id" : "obj-25",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 23.5, 14.0, 30.0, 30.0 ]
 				}
 
@@ -140,7 +152,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 140.75, 236.0, 176.0, 22.0 ],
+					"patching_rect" : [ 140.75, 236.0, 188.0, 22.0 ],
 					"text" : "loadmess samples #0_samples"
 				}
 
@@ -152,7 +164,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 93.666666666666657, 157.0, 215.0, 22.0 ],
+					"patching_rect" : [ 93.666666666666657, 157.0, 227.0, 22.0 ],
 					"text" : "buffer~ #0_samples @samps 1000000"
 				}
 
@@ -172,7 +184,7 @@
 				"box" : 				{
 					"comment" : "standard deviation",
 					"id" : "obj-46",
-					"index" : 0,
+					"index" : 5,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -228,7 +240,7 @@
 				"box" : 				{
 					"comment" : "mean",
 					"id" : "obj-38",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -240,7 +252,7 @@
 				"box" : 				{
 					"comment" : "maximum",
 					"id" : "obj-37",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -252,7 +264,7 @@
 				"box" : 				{
 					"comment" : "minimum",
 					"id" : "obj-36",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -288,7 +300,7 @@
 				"box" : 				{
 					"comment" : "number of samples",
 					"id" : "obj-17",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -350,6 +362,13 @@
 					"destination" : [ "obj-66", 1 ],
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -499,16 +518,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "calcStats.gendsp",
-				"bootpath" : "~/Documents/GitHub/VideoAnalysis/source",
-				"patcherrelativepath" : ".",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
