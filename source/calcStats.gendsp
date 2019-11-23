@@ -95,7 +95,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "Buffer samples(\"samples\");\r\n\r\nHistory count, v_min, v_max, v_mean, v_stddev;\r\n\r\n//in2 is for resetting, so if there is a \r\n//non-zero incoming number there\r\nif (in2 > 0) {\r\n\r\n\t//reset stats\r\n\tcount = 0;\r\n\tv_min = 0;\r\n\tv_max = 0;\r\n\tv_mean = 0;\r\n\tv_stddev = 0;\r\n\t\r\n//if not resetting\r\n} else {\r\n\t\r\n\t//only do stuff if the buffer is not full yet\r\n\tif (count < dim(samples)) {\r\n\r\n\t\r\n\t\t//register the new sample\r\n\t\tpoke(samples, in1, count);\r\n\t\r\n\t\t//increment count\r\n\t\tcount += 1;\r\n\t\r\n\t\t//calculate stats for data\r\n\t\tsum = 0;\r\n\t\tfor (i=0; i<count; i+=1) {\r\n\t\t\tval = peek(samples, i);\r\n\t\t\t//calculate min & max\r\n\t\t\tif (i==0) {\t\t\t\r\n\t\t\t\tv_min = val;\r\n\t\t\t\tv_max = val;\r\n\t\t\t} else {\r\n\t\t\t\tif (v_min > val) {\r\n\t\t\t\t\tv_min = val;\r\n\t\t\t\t}\r\n\t\t\t\tif (v_max < val) {\r\n\t\t\t\t\tv_max = val;\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t\tsum += val;\t\r\n\t\t}\r\n\t\r\n\t\t//calculate mean\r\n\t\tv_mean = sum / count;\r\n\t\t\r\n\t\t//only calculate standard deviation if\r\n\t\t//there are more than 1 registered samples\r\n\t\tif (count > 1) {\r\n\t\t\t\r\n\t\t\t//calculate standard deviation\r\n\t\t\tsum_of_squares = 0;\r\n\t\t\tfor (i=0; i<count; i+=1) {\r\n\t\t\t\tval = peek(samples, i);\r\n\t\t\t\tsum_of_squares += pow(val - v_mean, 2);\r\n\t\t\t}\r\n\t\t\tv_stddev = pow(sum_of_squares / count, 0.5);\t\t\r\n\t\t} else {\r\n\t\t\tv_stddev = 0;\r\n\t\t}\r\n\t}\r\n}\r\n\r\nout1 = count;\r\nout2 = v_min;\r\nout3 = v_max;\r\nout4 = v_mean;\r\nout5 = v_stddev;",
+					"code" : "History count, v_min, v_max, v_mean, v_prev_mean, v_s, v_stddev;\r\n\r\n//in2 is for resetting, so if there is a \r\n//non-zero incoming number there\r\nif (in2 > 0) {\r\n\r\n\t//reset stats\r\n\tcount = 0;\r\n\tv_min = 0;\r\n\tv_max = 0;\r\n\tv_mean = 0;\r\n\tv_prev_mean = 0;\r\n\tv_s = 0;\r\n\tv_stddev = 0;\r\n\t\r\n//if not resetting\r\n} else {\r\n\tif (count == 0) {\r\n\t\tv_min = in1;\r\n\t\tv_max = in1;\r\n\t} else {\r\n\t\tif (in1 < v_min) {\r\n\t\t\tv_min = in1;\r\n\t\t}\r\n\t\tif (in1 > v_max) {\r\n\t\t\tv_max = in1;\r\n\t\t}\r\n\t}\r\n\tv_prev_mean = v_mean;\r\n\tcount += 1;\r\n\tv_mean = v_mean + (in1 - v_mean) / count;\r\n\tv_s = v_s + ((in1 - v_mean) * (in1 - v_prev_mean));\r\n\tv_stddev = pow(v_s/(count-1), 0.5);\r\n}\r\n\r\nout1 = count;\r\nout2 = v_min;\r\nout3 = v_max;\r\nout4 = v_mean;\r\nout5 = v_stddev;",
 					"fontface" : 0,
 					"fontname" : "Lucida Console",
 					"fontsize" : 12.0,
@@ -181,7 +181,8 @@
 				}
 
 			}
- ]
+ ],
+		"autosave" : 0
 	}
 
 }

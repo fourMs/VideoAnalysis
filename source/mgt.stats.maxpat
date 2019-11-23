@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 260.0, 208.0, 585.0, 524.0 ],
+		"rect" : [ 59.0, 107.0, 581.0, 522.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -64,11 +64,11 @@
 				"box" : 				{
 					"comment" : "\"clear\" to reset stats; float/int to calculate stats",
 					"id" : "obj-25",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 23.5, 14.0, 30.0, 30.0 ]
 				}
 
@@ -80,7 +80,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "bang", "int" ],
-					"patching_rect" : [ 82.166666666666657, 90.0, 42.0, 22.0 ],
+					"patching_rect" : [ 82.166666666666657, 90.0, 90.666666666666686, 22.0 ],
 					"text" : "t 1 b 0"
 				}
 
@@ -126,10 +126,10 @@
 					"id" : "obj-65",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "clear", "bang", "int" ],
-					"patching_rect" : [ 93.666666666666657, 127.0, 444.833333333333371, 22.0 ],
-					"text" : "t clear b 1"
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "int" ],
+					"patching_rect" : [ 117.5, 156.0, 421.0, 22.0 ],
+					"text" : "t b 1"
 				}
 
 			}
@@ -142,30 +142,6 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 23.5, 62.0, 107.0, 22.0 ],
 					"text" : "route float int clear"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-61",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 140.75, 236.0, 188.0, 22.0 ],
-					"text" : "loadmess samples #0_samples"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-58",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 93.666666666666657, 157.0, 227.0, 22.0 ],
-					"text" : "buffer~ #0_samples @samps 1000000"
 				}
 
 			}
@@ -184,7 +160,7 @@
 				"box" : 				{
 					"comment" : "standard deviation",
 					"id" : "obj-46",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -240,7 +216,7 @@
 				"box" : 				{
 					"comment" : "mean",
 					"id" : "obj-38",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -252,7 +228,7 @@
 				"box" : 				{
 					"comment" : "maximum",
 					"id" : "obj-37",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -264,7 +240,7 @@
 				"box" : 				{
 					"comment" : "minimum",
 					"id" : "obj-36",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -300,7 +276,7 @@
 				"box" : 				{
 					"comment" : "number of samples",
 					"id" : "obj-17",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -315,7 +291,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 5,
 					"outlettype" : [ "float", "float", "float", "float", "float" ],
-					"patching_rect" : [ 118.0, 269.0, 420.5, 22.0 ],
+					"patching_rect" : [ 118.0, 269.0, 420.75, 22.0 ],
 					"text" : "gen calcStats"
 				}
 
@@ -397,13 +373,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-61", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
 					"midpoints" : [ 62.333333333333329, 246.5, 127.5, 246.5 ],
 					"source" : [ "obj-62", 1 ]
 				}
@@ -427,22 +396,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 316.083333333333371, 190.0, 127.5, 190.0 ],
-					"source" : [ "obj-65", 1 ]
+					"source" : [ "obj-65", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
-					"source" : [ "obj-65", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-58", 0 ],
-					"source" : [ "obj-65", 0 ]
+					"source" : [ "obj-65", 1 ]
 				}
 
 			}
@@ -505,7 +466,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-70", 0 ],
-					"midpoints" : [ 114.666666666666657, 115.0, 27.4375, 115.0 ],
+					"midpoints" : [ 163.333333333333343, 139.0, 27.4375, 139.0 ],
 					"source" : [ "obj-75", 2 ]
 				}
 
@@ -513,12 +474,21 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-70", 0 ],
-					"midpoints" : [ 91.666666666666657, 115.0, 27.4375, 115.0 ],
+					"midpoints" : [ 91.666666666666657, 130.0, 27.4375, 130.0 ],
 					"source" : [ "obj-75", 0 ]
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "calcStats.gendsp",
+				"bootpath" : "~/Documents/GitHub/VideoAnalysis/source",
+				"patcherrelativepath" : ".",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
