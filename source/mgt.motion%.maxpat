@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 459.0, 85.0, 549.0, 218.0 ],
+		"rect" : [ 459.0, 85.0, 549.0, 256.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -39,13 +39,37 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 40.0, 56.0, 59.0, 21.0 ],
+					"text" : "t b l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 40.0, 180.0, 151.0, 21.0 ],
+					"text" : "jit.matrix @thru 0 @adapt 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 12.0,
 					"id" : "obj-1",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 169.0, 86.0, 319.0, 21.0 ],
+					"patching_rect" : [ 169.0, 52.0, 319.0, 21.0 ],
 					"text" : "This is the trick to flip the order of the two frames."
 				}
 
@@ -58,7 +82,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 169.0, 58.0, 349.0, 21.0 ],
+					"patching_rect" : [ 169.0, 24.0, 349.0, 21.0 ],
 					"text" : "Removes similar frames to avoid a blank motion image."
 				}
 
@@ -72,7 +96,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 40.0, 58.0, 71.0, 23.0 ],
+					"patching_rect" : [ 80.0, 85.0, 71.0, 23.0 ],
 					"text" : "jit.change"
 				}
 
@@ -85,7 +109,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 169.0, 120.0, 309.0, 21.0 ],
+					"patching_rect" : [ 169.0, 86.0, 309.0, 21.0 ],
 					"text" : "Find the absolute difference between the frames."
 				}
 
@@ -99,7 +123,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 40.0, 120.0, 118.0, 23.0 ],
+					"patching_rect" : [ 80.0, 149.0, 118.0, 23.0 ],
 					"text" : "jit.op @op absdiff"
 				}
 
@@ -113,7 +137,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 40.0, 88.0, 37.0, 23.0 ],
+					"patching_rect" : [ 80.0, 112.0, 37.0, 23.0 ],
 					"text" : "t l l"
 				}
 
@@ -122,12 +146,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-7",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.0, 27.0, 25.0, 25.0 ]
+					"patching_rect" : [ 40.0, 22.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -135,16 +159,30 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-8",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 40.0, 164.0, 25.0, 25.0 ]
+					"patching_rect" : [ 40.0, 208.0, 25.0, 25.0 ]
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-10", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-3", 0 ]
@@ -153,7 +191,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -168,25 +206,26 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
-					"midpoints" : [ 49.5, 115.0, 148.5, 115.0 ],
+					"midpoints" : [ 89.5, 144.0, 188.5, 144.0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "jit.pass.mxe64",
-				"type" : "mx64"
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
 			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
