@@ -2,13 +2,14 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 1,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 0,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 313.0, 108.0, 576.0, 438.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -48,7 +49,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 138.0, 243.0, 47.0, 21.0 ],
-					"style" : "",
 					"triscale" : 0.9
 				}
 
@@ -62,7 +62,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 138.0, 268.0, 35.0, 19.0 ],
-					"style" : "",
 					"text" : "max"
 				}
 
@@ -76,7 +75,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 83.0, 268.0, 35.0, 19.0 ],
-					"style" : "",
 					"text" : "min"
 				}
 
@@ -93,7 +91,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 248.0, 243.0, 47.0, 21.0 ],
-					"style" : "",
 					"triscale" : 0.9
 				}
 
@@ -110,7 +107,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 193.0, 243.0, 47.0, 21.0 ],
-					"style" : "",
 					"triscale" : 0.9
 				}
 
@@ -123,8 +119,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 52.0, 91.0, 19.0, 19.0 ],
-					"style" : ""
+					"patching_rect" : [ 52.0, 91.0, 19.0, 19.0 ]
 				}
 
 			}
@@ -138,7 +133,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 52.0, 121.0, 63.0, 21.0 ],
-					"style" : "",
 					"text" : "metro 20"
 				}
 
@@ -153,7 +147,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 52.0, 146.0, 80.0, 21.0 ],
-					"style" : "",
 					"text" : "drunk 128 2"
 				}
 
@@ -170,7 +163,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 83.0, 243.0, 47.0, 21.0 ],
-					"style" : "",
 					"triscale" : 0.9
 				}
 
@@ -187,7 +179,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 28.0, 243.0, 47.0, 21.0 ],
-					"style" : "",
 					"triscale" : 0.9
 				}
 
@@ -201,7 +192,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 28.0, 268.0, 36.0, 19.0 ],
-					"style" : "",
 					"text" : "count"
 				}
 
@@ -215,7 +205,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 193.0, 268.0, 37.0, 19.0 ],
-					"style" : "",
 					"text" : "mean"
 				}
 
@@ -230,7 +219,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 248.0, 268.0, 56.0, 31.0 ],
-					"style" : "",
 					"text" : "standard deviation"
 				}
 
@@ -246,7 +234,6 @@
 					"numoutlets" : 6,
 					"outlettype" : [ "int", "float", "float", "float", "float", "" ],
 					"patching_rect" : [ 28.0, 203.0, 267.0, 21.0 ],
-					"style" : "",
 					"text" : "j.stats"
 				}
 
@@ -260,8 +247,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 320.0, 369.0, 227.0, 21.0 ],
-					"style" : "",
+					"patching_rect" : [ 320.0, 396.0, 227.0, 21.0 ],
 					"text" : "331. 0.069312 72. 59.913074 7.209246"
 				}
 
@@ -273,8 +259,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 320.0, 309.0, 20.0, 20.0 ],
-					"style" : ""
+					"parameter_enable" : 0,
+					"patching_rect" : [ 320.0, 309.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -288,7 +274,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 320.0, 334.0, 73.0, 21.0 ],
-					"style" : "",
 					"text" : "mgt.liststats"
 				}
 
@@ -297,8 +282,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 329.5, 361.5, 537.5, 361.5 ],
 					"source" : [ "obj-1", 0 ]
 				}
@@ -307,8 +290,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -316,8 +297,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -325,8 +304,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-31", 0 ]
 				}
 
@@ -334,9 +311,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 61.5, 183.5, 383.5, 183.5 ],
+					"order" : 0,
 					"source" : [ "obj-43", 0 ]
 				}
 
@@ -344,9 +320,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 61.5, 184.5, 37.5, 184.5 ],
+					"order" : 1,
 					"source" : [ "obj-43", 0 ]
 				}
 
@@ -354,8 +329,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-49", 2 ]
 				}
 
@@ -363,8 +336,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-49", 4 ]
 				}
 
@@ -372,8 +343,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-49", 3 ]
 				}
 
@@ -381,8 +350,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-49", 1 ]
 				}
 
@@ -390,8 +357,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-49", 0 ]
 				}
 
@@ -399,7 +364,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "mgt.liststats.maxpat",
-				"bootpath" : "~/GoogleDrive/Development/CIMA/cima-export/patches",
+				"bootpath" : "~/Desktop/RITMO/VideoAnalysis/source",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
