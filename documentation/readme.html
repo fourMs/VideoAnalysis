@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Readme</title>
+  </head>
+  <style>
+    body {
+      background-color: #E5E5E5;
+      margin: 0;
+      padding: 0;
+    }
+    #menubar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: -webkit-sticky;
+      position: sticky;
+      top: -1px;
+    }
+
+    #menubar li {
+      float: left;
+    }
+
+    #menubar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    #menubar li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #4caf50;
+    }
+
+    #page {
+      margin: 10px;
+    }
+  
+  </style>
+  <body>
+
+    <ul id="menubar">
+      <li><a href="getStarted.html">Get Started</a></li>
+      <li><a class="active" href="readme.html">Readme</a></li>
+    </ul>
+    <div id="page">
+      <h1>VideoAnalysis</h1>
+
+      <p>
+        Non-realtime video analysis, exporting motiongrams and various
+        quantitative features of movement in the video file.
+      </p>
+  
+      <h2>Features</h2>
+  
+      <ul>
+        <li>Imports a folder of video files for batch processing</li>
+        <li>
+          Realtime previewing of video, motion image, motiongrams and analysis
+          data
+        </li>
+        <li>Outputs horizontal and vertical motiongrams</li>
+        <li>
+          The output files are saved in the location of, and names based on, the
+          original video file.
+        </li>
+        <li>Outputs a text file with the following data:</li>
+        <ul>
+          <li>The first column contains a time stamp.</li>
+          <li>Columns 2 through 10 contains filtered data</li>
+          <li>Columns 11 through 19 contains unfiltered data</li>
+          <li>
+            Xposition, Yposition, Xvelocity, Yvelocity, absolute velocity,
+            direction, absolute acceleration, change in direction, Quantity of
+            Motion
+          </li>
+        </ul>
+      </ul>
+  
+      <p>Please see the wiki page about how to use the exported data.</p>
+  
+      <h2>Demonstration</h2>
+  
+      <p>
+        See <a href="https://www.youtube.com/embed/vvuiir2vDfQ">this video</a> for
+        a demonstrating of how the program works.
+      </p>
+  
+      <h2>FAQ</h2>
+  
+      <p>
+        Q: What are the numbers being exported?<br />
+        A: Check this
+        <a href="http://fourms.wiki.ifi.uio.no/Quantitative_video_analysis"
+          >wiki page</a
+        >.
+      </p>
+  
+      <p>
+        Q: What type of video file should I use?<br />
+        A: VideoAnalysis uses the QuickTime engine, so any video file that can
+        open and play in QuickTime should also open and play in VideoAnalysis.
+      </p>
+  
+      <p>
+        Q: How do I import the data into OpenOffice?<br />
+        A:
+        <a
+          href="http://www.youtube.com/watch?v=yPZQcBcGBJw&list=UUO_Yw4-CUPRHb1ghXEXYiGA&index=22"
+          >This video</a
+        >
+        shows how to import (in Norwegian).
+      </p>
+  
+      <p>
+        Q: What type of video compression should I use?<br />
+        A: This depends on many factors. The best is to use uncompressed video,
+        but this is usually not practically possible. Second best is to use a file
+        format that compresses the video on a per frame basis, e.g. Motion JPEG
+        (MJPEG). Other compression types, e.g. MPEG-1/2/4 use keyframes for
+        compression. That said, we often use MPEG-4 (H.264) compression, since
+        this gives a high visual quality and small file size.
+      </p>
+  
+      <p>
+        Claudia Mauléon and Esteban Etcheverry have written a
+        <a
+          href="https://www.hf.uio.no/ritmo/english/groups/fourms/software/VideoAnalysis/downloads/Dumies_Tutorial.pdf"
+          >short overview</a
+        >
+        of their experiences with working with VideoAnalysis on Windows.
+      </p>
+  
+      <h2>History</h2>
+  
+      <p>
+        This software started out the
+        <a
+          href="http://www.uio.no/english/research/groups/fourms/downloads/software/musicalgesturestoolbox/"
+        >
+          Musical Gestures Toolbox for Max</a
+        >
+        in 2004, and later became integrated as the first collection of video
+        modules in the <a href="http://www.jamoma.org">Jamoma</a> project.
+      </p>
+  
+      <p>
+        Much of the functionality was ported to the
+        <a href="https://github.com/fourMs/MGT-matlab/"
+          >Musical Gestures Toolbox for Matlab</a
+        >
+        and later also
+        <a href="https://github.com/fourMs/MGT-python"
+          >Musical Gestures Toolbox for Python</a
+        >.
+      </p>
+  
+      <p>
+        The software is currently maintained by the
+        <a href="https://github.com/fourMs">fourMs lab</a> at
+        <a href="https://www.uio.no/ritmo/english/"
+          >RITMO Centre for Interdisciplinary Studies in Rhythm, Time and
+          Motion</a
+        >
+        at the University of Oslo.
+      </p>
+  
+      <h2>Credits</h2>
+  
+      <p>
+        Main developers:
+        <a href="http://people.uio.no/alexanje">Alexander Refsum Jensenius</a>.
+      </p>
+  
+      <h2>Reference</h2>
+  
+      <p>
+        If you use this toolbox for research purposes, please reference this
+        publication: <br />
+        <ul>
+            <li>Jensenius, Alexander Refsum (2005). <a href="https://www.duo.uio.no/handle/10852/26907">Developing Tools for Studying Musical Gestures within the Max/MSP/Jitter Environment</a>. Proceedings of the International Computer Music Conference, p. 282-285. </li>
+        </ul>
+      </p>
+  
+      <h2>License</h2>
+  
+      <p>
+          This software is open source, and is shared with <a href="https://www.gnu.org/licenses/gpl-3.0.html">The GNU General Public License v3.0</a>.
+      </p>
+    </div>
+    <!-- <img src="3D-to-2D.gif" alt="3D-to-2D.gif" style="max-width: 100%;" /> -->
+  </body>
+</html>
