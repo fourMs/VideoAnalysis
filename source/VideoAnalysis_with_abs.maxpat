@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 76.0, 134.0, 1311.0, 297.0 ],
+		"rect" : [ 144.0, 101.0, 1311.0, 297.0 ],
 		"openrect" : [ 0.0, 0.0, 1311.340425550937653, 296.603464066982269 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -66859,7 +66859,7 @@
 					"fontsize" : 11.595186999999999,
 					"id" : "obj-132",
 					"maxclass" : "number",
-					"maximum" : 496,
+					"maximum" : 240,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -66868,7 +66868,7 @@
 					"patching_rect" : [ 228.25, 887.023809523809518, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 635.142790501316313, 99.066984057426453, 46.0, 22.0 ],
-					"textcolor" : [ 0.086, 0.494, 0.588, 1.0 ],
+					"textcolor" : [ 0.086, 0.494, 0.588, 0.0 ],
 					"triangle" : 0
 				}
 
@@ -66880,7 +66880,7 @@
 					"fontsize" : 11.595186999999999,
 					"id" : "obj-133",
 					"maxclass" : "number",
-					"maximum" : 518,
+					"maximum" : 320,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -66889,7 +66889,7 @@
 					"patching_rect" : [ 155.25, 887.023809523809518, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 592.059457167983055, 99.066984057426453, 46.083333333333258, 22.0 ],
-					"textcolor" : [ 0.086, 0.494, 0.588, 1.0 ],
+					"textcolor" : [ 0.086, 0.494, 0.588, 0.0 ],
 					"triangle" : 0
 				}
 
@@ -66935,7 +66935,7 @@
 					"fontsize" : 11.595186999999999,
 					"id" : "obj-102",
 					"maxclass" : "number",
-					"maximum" : 496,
+					"maximum" : 240,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -66944,7 +66944,7 @@
 					"patching_rect" : [ 228.25, 847.5, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 635.142790501316313, 62.816984057426453, 46.0, 22.0 ],
-					"textcolor" : [ 0.086, 0.494, 0.588, 1.0 ],
+					"textcolor" : [ 0.086, 0.494, 0.588, 0.0 ],
 					"triangle" : 0
 				}
 
@@ -66956,7 +66956,7 @@
 					"fontsize" : 11.595186999999999,
 					"id" : "obj-103",
 					"maxclass" : "number",
-					"maximum" : 518,
+					"maximum" : 320,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -66965,7 +66965,7 @@
 					"patching_rect" : [ 155.25, 847.5, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 592.059457167983055, 62.816984057426453, 46.083333333333258, 22.0 ],
-					"textcolor" : [ 0.086, 0.494, 0.588, 1.0 ],
+					"textcolor" : [ 0.086, 0.494, 0.588, 0.0 ],
 					"triangle" : 0
 				}
 
@@ -67010,7 +67010,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 332.200415489574311, 98.316984057426453, 168.0, 20.0 ],
 					"text" : "Click and drag in image to crop",
-					"textcolor" : [ 0.13, 0.13, 0.13, 1.0 ]
+					"textcolor" : [ 0.13, 0.13, 0.13, 0.0 ]
 				}
 
 			}
@@ -67341,7 +67341,7 @@
 					"patching_rect" : [ 313.75, 730.5, 115.0, 14.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 731.173436497648595, 268.458840489387512, 289.884078443050385, 18.0 ],
-					"setminmax" : [ 0.0, 37704.0 ],
+					"setminmax" : [ 0.0, 2719.0 ],
 					"setstyle" : 1,
 					"settype" : 0,
 					"slidercolor" : [ 0.58, 0.01, 0.01, 0.0 ]
@@ -67500,9 +67500,9 @@
 					"bgfillcolor_proportion" : 0.5,
 					"bgfillcolor_type" : "gradient",
 					"color" : [ 0.827451, 0.827451, 0.827451, 1.0 ],
-					"hint" : "C:/Users/User/Desktop/test-videos/test-videos-folder/dance.avi",
+					"hint" : "C:/Users/User/Desktop/test-videos/test-videos-folder/bball.mov",
 					"id" : "obj-25",
-					"items" : "dance.avi",
+					"items" : "bball.mov",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
