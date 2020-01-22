@@ -91,7 +91,7 @@
 				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 316.5, 611.0, 130.0, 22.0 ],
 					"text" : "mgt.write-to-file motion"
@@ -381,6 +381,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
+					"order" : 1,
+					"source" : [ "obj-106", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"order" : 0,
 					"source" : [ "obj-106", 0 ]
 				}
 

@@ -164,7 +164,7 @@
 				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 233.5, 566.0, 117.0, 22.0 ],
 					"text" : "mgt.write-to-file crop"
@@ -663,6 +663,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
+					"order" : 1,
+					"source" : [ "obj-118", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 1 ],
+					"order" : 0,
 					"source" : [ "obj-118", 0 ]
 				}
 

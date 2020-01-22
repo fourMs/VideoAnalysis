@@ -41,7 +41,7 @@
 				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 38.0, 649.0, 113.0, 22.0 ],
 					"text" : "mgt.write-to-file box"
@@ -74,7 +74,7 @@
 				"box" : 				{
 					"comment" : "cropped image in",
 					"id" : "obj-13",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -127,7 +127,7 @@
 				"box" : 				{
 					"comment" : "threshold",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -252,7 +252,7 @@
 				"box" : 				{
 					"comment" : "box image",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -494,6 +494,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
+					"order" : 1,
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"order" : 0,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -713,35 +722,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "cv.jit.close.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/cv.jit/patchers",
-				"patcherrelativepath" : "../../../Max 8/Packages/cv.jit/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mgt.write-to-file.maxpat",
-				"bootpath" : "~/Documents/GitHub/VideoAnalysis/source",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cv.jit.threshold.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "cv.jit.erode.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "cv.jit.dilate.mxe64",
-				"type" : "mx64"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
