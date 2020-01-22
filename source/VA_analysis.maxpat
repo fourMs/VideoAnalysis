@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 107.0, 313.0, 209.0 ],
+		"rect" : [ 663.0, 264.0, 250.0, 213.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,18 +38,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"color" : [ 0.129411764705882, 0.690196078431373, 0.827450980392157, 1.0 ],
-					"id" : "obj-6",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 175.0, 127.0, 113.0, 22.0 ],
-					"text" : "VA_find_video_size"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"color" : [ 0.129411764705882, 0.690196078431373, 0.827450980392157, 1.0 ],
 					"id" : "obj-5",
@@ -157,14 +145,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"order" : 2,
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
 					"order" : 1,
 					"source" : [ "obj-21", 0 ]
 				}
@@ -172,8 +152,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 20.5, 91.0, 184.5, 91.0 ],
+					"destination" : [ "obj-5", 0 ],
 					"order" : 0,
 					"source" : [ "obj-21", 0 ]
 				}
