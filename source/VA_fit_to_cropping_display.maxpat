@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 125.0, 137.0, 776.0, 645.0 ],
+		"rect" : [ -867.0, 55.0, 776.0, 645.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -201,7 +201,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 674.0, 509.0, 66.5, 22.0 ],
-					"text" : "92 228"
+					"text" : "35 285"
 				}
 
 			}
@@ -488,7 +488,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 39.0, 41.0, 73.0, 22.0 ],
+					"patching_rect" : [ 39.0, 39.0, 73.0, 22.0 ],
 					"text" : "jit.matrixinfo"
 				}
 
@@ -497,12 +497,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-54",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 39.0, 5.0, 30.0, 30.0 ]
+					"patching_rect" : [ 39.0, 3.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -510,7 +510,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-55",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -877,9 +877,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
