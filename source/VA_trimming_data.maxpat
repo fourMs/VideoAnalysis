@@ -41,11 +41,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-105",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 18.5, 45.0, 30.0, 30.0 ]
 				}
 
@@ -220,7 +220,6 @@
 					}
 ,
 					"patching_rect" : [ 211.75, 141.0, 107.0, 22.0 ],
-					"presentation_linecount" : 3,
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1190,7 +1189,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.5, 116.0, 41.0, 22.0 ],
+					"patching_rect" : [ 18.5, 265.0, 41.0, 22.0 ],
 					"text" : "v item"
 				}
 
@@ -1533,8 +1532,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "2015 big",
 				"default" : 				{

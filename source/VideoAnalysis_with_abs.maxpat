@@ -507,7 +507,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 780.500010666666526, 299.0, 106.0, 22.0 ],
+									"patching_rect" : [ 810.500010666666526, 299.0, 106.0, 22.0 ],
 									"text" : "VA_cropping_data"
 								}
 
@@ -519,7 +519,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 493.100010666666549, 299.0, 132.0, 22.0 ],
+									"patching_rect" : [ 511.100010666666549, 299.0, 132.0, 22.0 ],
 									"text" : "VA_export_boxes_data"
 								}
 
@@ -531,7 +531,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 636.800010666666594, 299.0, 112.0, 22.0 ],
+									"patching_rect" : [ 660.800010666666594, 299.0, 112.0, 22.0 ],
 									"text" : "VA_skipframe_data"
 								}
 
@@ -543,7 +543,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 349.400010666666617, 299.0, 134.0, 22.0 ],
+									"patching_rect" : [ 361.400010666666617, 299.0, 134.0, 22.0 ],
 									"text" : "VA_image_format_data"
 								}
 
@@ -555,7 +555,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 205.700010666666628, 299.0, 86.0, 22.0 ],
+									"patching_rect" : [ 211.700010666666628, 299.0, 86.0, 22.0 ],
 									"text" : "VA_color_data"
 								}
 
@@ -82065,9 +82065,9 @@
 			}
 , 			{
 				"box" : 				{
-					"activebgcolor" : [ 0.682, 0.761, 0.769, 1.0 ],
-					"activebgoncolor" : [ 0.996, 0.349, 0.227, 1.0 ],
-					"bordercolor" : [ 0.31, 0.31, 0.31, 1.0 ],
+					"activebgcolor" : [ 0.682, 0.761, 0.769, 0.0 ],
+					"activebgoncolor" : [ 0.996, 0.349, 0.227, 0.0 ],
+					"bordercolor" : [ 0.31, 0.31, 0.31, 0.0 ],
 					"focusbordercolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 1.0 ],
 					"id" : "obj-176",
 					"maxclass" : "live.tab",
@@ -82092,6 +82092,8 @@
 
 					}
 ,
+					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"textoncolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"varname" : "live.tab"
 				}
 
@@ -82106,7 +82108,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 148.854671870668767, 224.60566520690918, 37.0, 20.0 ],
 					"text" : "Type:",
-					"textcolor" : [ 0.13, 0.13, 0.13, 1.0 ]
+					"textcolor" : [ 0.13, 0.13, 0.13, 0.0 ]
 				}
 
 			}
@@ -99254,9 +99256,9 @@
 					"bgfillcolor_proportion" : 0.5,
 					"bgfillcolor_type" : "gradient",
 					"color" : [ 0.827451, 0.827451, 0.827451, 1.0 ],
-					"hint" : "C:/Users/User/Desktop/test-videos/test-videos-folder/blading.mov",
+					"hint" : "Add a file or a folder to start!",
 					"id" : "obj-25",
-					"items" : [ "bball.mov", ",", "blading.mov", ",", "dance.avi", ",", "pianist.avi", ",", "portrait.mov", ",", "test.mov" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -115303,13 +115305,13 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 148.854671870668767, 252.60566520690918, 63.0, 20.0 ],
 					"text" : "Threshold:",
-					"textcolor" : [ 0.13, 0.13, 0.13, 1.0 ]
+					"textcolor" : [ 0.13, 0.13, 0.13, 0.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.827, 0.827, 0.827, 1.0 ],
+					"bgcolor" : [ 0.827, 0.827, 0.827, 0.0 ],
 					"fontname" : "Verdana",
 					"fontsize" : 11.0,
 					"format" : 6,
@@ -115324,7 +115326,7 @@
 					"patching_rect" : [ 507.843231320381221, 1180.449160099029541, 36.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 212.854671870668767, 251.60566520690918, 49.0, 22.0 ],
-					"textcolor" : [ 0.086, 0.494, 0.588, 1.0 ],
+					"textcolor" : [ 0.086, 0.494, 0.588, 0.0 ],
 					"triangle" : 0
 				}
 
@@ -118350,13 +118352,13 @@
 		"parameters" : 		{
 			"obj-193" : [ "live.text[11]", "live.text[11]", 0 ],
 			"obj-176" : [ "live.tab", "live.tab", 0 ],
-			"obj-121" : [ "live.toggle[4]", "live.toggle", 0 ],
 			"obj-94" : [ "swatch", "swatch", 0 ],
+			"obj-121" : [ "live.toggle[4]", "live.toggle", 0 ],
 			"obj-184" : [ "live.tab[1]", "live.tab[1]", 0 ],
 			"obj-218" : [ "live.text[6]", "live.text[6]", 0 ],
 			"obj-5" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-215" : [ "Window Size", "Window Size", 0 ],
 			"obj-105" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-215" : [ "Window Size", "Window Size", 0 ],
 			"obj-91" : [ "live.text", "live.text", 0 ],
 			"obj-145" : [ "live.text[5]", "live.text[2]", 0 ],
 			"obj-117" : [ "live.toggle[2]", "live.toggle", 0 ],
@@ -118367,8 +118369,8 @@
 			"obj-222" : [ "live.text[7]", "live.text", 0 ],
 			"obj-114" : [ "live.toggle[5]", "live.toggle", 0 ],
 			"obj-123" : [ "live.text[2]", "live.text[2]", 0 ],
-			"obj-30" : [ "live.toggle[1]", "live.toggle", 0 ],
 			"obj-236::obj-91::obj-13" : [ "live.text[10]", "live.text[10]", 0 ],
+			"obj-30" : [ "live.toggle[1]", "live.toggle", 0 ],
 			"obj-241" : [ "live.text[8]", "live.text[8]", 0 ],
 			"obj-154" : [ "live.tab[2]", "live.tab[2]", 0 ],
 			"parameterbanks" : 			{
