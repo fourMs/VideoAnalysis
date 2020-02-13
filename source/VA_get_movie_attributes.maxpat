@@ -39,12 +39,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 462.5, 377.0, 71.0, 22.0 ],
+					"text" : "v duration_t"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 542.666666666666742, 160.0, 301.0, 22.0 ],
+					"patching_rect" : [ 542.666666666666742, 169.0, 301.0, 22.0 ],
 					"text" : "gettimescale, getduration, getframecount, getmoviedim"
 				}
 
@@ -329,7 +341,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 648.0, 573.0, 66.5, 22.0 ],
-									"text" : "92 228"
+									"text" : "35 285"
 								}
 
 							}
@@ -1433,6 +1445,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-24", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"order" : 0,
 					"source" : [ "obj-24", 1 ]
@@ -1491,6 +1511,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"midpoints" : [ 472.0, 370.0, 590.0, 370.0 ],
+					"order" : 0,
 					"source" : [ "obj-24", 2 ]
 				}
 
