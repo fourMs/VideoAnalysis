@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 247.75, 53.0, 119.0, 22.0 ],
+					"text" : "r recalled_looppoints"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -46,18 +58,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 247.75, 79.0, 57.0, 22.0 ],
 					"text" : "vexpr $i1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 247.75, 55.0, 107.0, 22.0 ],
-					"text" : "r set_change_filter"
 				}
 
 			}
@@ -851,8 +851,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 313.0, 197.0, 109.0, 22.0 ],
-									"text" : "s set_change_filter"
+									"patching_rect" : [ 313.0, 197.0, 121.0, 22.0 ],
+									"text" : "s recalled_looppoints"
 								}
 
 							}
@@ -16858,6 +16858,13 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-66", 0 ],
 					"source" : [ "obj-100", 0 ]
 				}
@@ -16888,13 +16895,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-132", 0 ],
 					"source" : [ "obj-125", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"source" : [ "obj-13", 0 ]
 				}
 
 			}
