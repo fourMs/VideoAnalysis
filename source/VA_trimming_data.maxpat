@@ -319,7 +319,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 513.0, 113.0, 457.0, 180.0 ],
+						"rect" : [ 513.0, 113.0, 652.0, 265.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -347,6 +347,41 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "float" ],
+									"patching_rect" : [ 461.5, 75.0, 29.5, 22.0 ],
+									"text" : "!- 0."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 162.0, 48.0, 318.5, 22.0 ],
+									"text" : "t l l"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 461.5, 106.0, 154.0, 22.0 ],
+									"text" : "s recalled_norm_looprange"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-5",
 									"maxclass" : "newobj",
@@ -655,7 +690,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 388.5, 106.0, 51.0, 22.0 ],
+									"patching_rect" : [ 388.5, 136.0, 51.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -673,7 +708,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 313.0, 147.0, 109.0, 22.0 ],
+									"patching_rect" : [ 313.0, 177.0, 109.0, 22.0 ],
 									"text" : "s set_change_filter"
 								}
 
@@ -687,7 +722,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 91.0, 150.0, 52.0 ],
+									"patching_rect" : [ 10.0, 121.0, 150.0, 52.0 ],
 									"text" : "hack to force [playbar] to redraw with the new looppoints"
 								}
 
@@ -699,7 +734,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "bang", "", "", "" ],
-									"patching_rect" : [ 162.0, 74.0, 245.5, 22.0 ],
+									"patching_rect" : [ 162.0, 104.0, 245.5, 22.0 ],
 									"text" : "t b l l l"
 								}
 
@@ -849,7 +884,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 162.0, 45.0, 105.0, 22.0 ],
+									"patching_rect" : [ 162.0, 75.0, 105.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -868,7 +903,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 237.5, 106.0, 111.0, 22.0 ],
+									"patching_rect" : [ 237.5, 136.0, 111.0, 22.0 ],
 									"text" : "prepend looppoints"
 								}
 
@@ -880,7 +915,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 162.0, 106.0, 61.0, 22.0 ],
+									"patching_rect" : [ 162.0, 136.0, 61.0, 22.0 ],
 									"text" : "start, stop"
 								}
 
@@ -891,7 +926,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 162.0, 147.0, 64.0, 22.0 ],
+									"patching_rect" : [ 162.0, 177.0, 64.0, 22.0 ],
 									"text" : "s to-movie"
 								}
 
@@ -911,6 +946,27 @@
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-1", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-52", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-35", 0 ],
 									"source" : [ "obj-37", 0 ]
@@ -961,7 +1017,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-52", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-78", 0 ]
 								}
 
@@ -16603,7 +16659,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 513.0, 113.0, 457.0, 180.0 ],
+						"rect" : [ 513.0, 113.0, 652.0, 265.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -16631,6 +16687,41 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "float" ],
+									"patching_rect" : [ 461.5, 75.0, 29.5, 22.0 ],
+									"text" : "!- 0."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 162.0, 48.0, 318.5, 22.0 ],
+									"text" : "t l l"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 461.5, 106.0, 154.0, 22.0 ],
+									"text" : "s recalled_norm_looprange"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-5",
 									"maxclass" : "newobj",
@@ -16939,7 +17030,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 388.5, 106.0, 51.0, 22.0 ],
+									"patching_rect" : [ 388.5, 136.0, 51.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -16957,7 +17048,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 313.0, 147.0, 109.0, 22.0 ],
+									"patching_rect" : [ 313.0, 177.0, 109.0, 22.0 ],
 									"text" : "s set_change_filter"
 								}
 
@@ -16971,7 +17062,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 91.0, 150.0, 52.0 ],
+									"patching_rect" : [ 10.0, 121.0, 150.0, 52.0 ],
 									"text" : "hack to force [playbar] to redraw with the new looppoints"
 								}
 
@@ -16983,7 +17074,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "bang", "", "", "" ],
-									"patching_rect" : [ 162.0, 74.0, 245.5, 22.0 ],
+									"patching_rect" : [ 162.0, 104.0, 245.5, 22.0 ],
 									"text" : "t b l l l"
 								}
 
@@ -17133,7 +17224,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 162.0, 45.0, 105.0, 22.0 ],
+									"patching_rect" : [ 162.0, 75.0, 105.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -17152,7 +17243,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 237.5, 106.0, 111.0, 22.0 ],
+									"patching_rect" : [ 237.5, 136.0, 111.0, 22.0 ],
 									"text" : "prepend looppoints"
 								}
 
@@ -17164,7 +17255,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 162.0, 106.0, 61.0, 22.0 ],
+									"patching_rect" : [ 162.0, 136.0, 61.0, 22.0 ],
 									"text" : "start, stop"
 								}
 
@@ -17175,7 +17266,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 162.0, 147.0, 64.0, 22.0 ],
+									"patching_rect" : [ 162.0, 177.0, 64.0, 22.0 ],
 									"text" : "s to-movie"
 								}
 
@@ -17195,6 +17286,27 @@
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-1", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-52", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-35", 0 ],
 									"source" : [ "obj-37", 0 ]
@@ -17245,7 +17357,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-52", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-78", 0 ]
 								}
 
