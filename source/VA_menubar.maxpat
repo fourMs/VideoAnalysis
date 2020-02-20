@@ -687,7 +687,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 408.0, 294.0, 302.0, 365.0 ],
+						"rect" : [ 408.0, 294.0, 302.0, 409.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -769,7 +769,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 61.33333333333303, 291.0, 158.0, 22.0 ],
+									"patching_rect" : [ 61.33333333333303, 350.0, 158.666687000000024, 22.0 ],
 									"text" : "r VA_exportoptions_recalled"
 								}
 
@@ -781,7 +781,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 42.33333333333303, 259.0, 128.0, 22.0 ],
+									"patching_rect" : [ 42.33333333333303, 318.0, 128.666687000000024, 22.0 ],
 									"text" : "r VA_exportoptions_UI"
 								}
 
@@ -804,7 +804,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 66.000020333333055, 198.0, 130.0, 22.0 ],
+									"patching_rect" : [ 56.33333333333303, 191.0, 130.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"precision" : 6
@@ -888,7 +888,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 19.000020333333055, 287.0, 30.0, 30.0 ]
+									"patching_rect" : [ 19.000020333333055, 346.5, 30.666687000000024, 30.666687000000024 ]
 								}
 
 							}
@@ -955,7 +955,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-128", 0 ],
-									"midpoints" : [ 70.83333333333303, 323.0, 225.916676833333042, 323.0, 225.916676833333042, 85.0, 85.000020333333055, 85.0 ],
+									"midpoints" : [ 70.83333333333303, 382.0, 225.916676833333042, 382.0, 225.916676833333042, 85.0, 85.000020333333055, 85.0 ],
 									"order" : 0,
 									"source" : [ "obj-2", 0 ]
 								}
@@ -16580,7 +16580,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 731.0, 36.0, 70.0, 22.0 ],
+					"patching_rect" : [ 735.0, 40.0, 70.0, 22.0 ],
 					"text" : "loadmess 0"
 				}
 
