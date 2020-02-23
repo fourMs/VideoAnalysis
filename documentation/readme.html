@@ -2,49 +2,8 @@
 <html lang="en">
   <head>
     <title>Readme</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <style>
-    body {
-      background-color: #E5E5E5;
-      margin: 0;
-      padding: 0;
-    }
-    #menubar {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-      position: -webkit-sticky;
-      position: sticky;
-      top: -1px;
-    }
-
-    #menubar li {
-      float: left;
-    }
-
-    #menubar li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    #menubar li a:hover:not(.active) {
-      background-color: #111;
-    }
-
-    .active {
-      background-color: #4caf50;
-    }
-
-    #page {
-      margin: 10px;
-    }
-  
-  </style>
   <body>
 
     <ul id="menubar">
@@ -52,7 +11,8 @@
       <li><a class="active" href="readme.html">Readme</a></li>
     </ul>
     <div id="page">
-      <h1>VideoAnalysis</h1>
+      <img src="img/ritmo.png" id="ritmo-icon">
+      <h1 id="title">About VideoAnalysis...</h1>
 
       <p>
         Non-realtime video analysis, exporting motiongrams and various

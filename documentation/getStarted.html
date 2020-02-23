@@ -5,48 +5,8 @@
       Get Started
     </title>
     <script src="jquery\jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <style>
-    body {
-      background-color: #e5e5e5;
-      margin: 0;
-      padding: 0;
-    }
-    #menubar {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-      position: -webkit-sticky;
-      position: sticky;
-      top: -1px;
-    }
-
-    #menubar li {
-      float: left;
-    }
-
-    #menubar li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    #menubar li a:hover:not(.active) {
-      background-color: #111;
-    }
-
-    .active {
-      background-color: #4caf50;
-    }
-
-    #page {
-      margin: 10px;
-    }
-  </style>
   <body>
     <ul id="menubar">
       <li><a class="active" href="getStarted.html">Get Started</a></li>
@@ -54,8 +14,11 @@
     </ul>
 
     <div id="page">
-      <h1>Get Started</h1>
-      <h2>Open a video file</h2>
+      <img src="img/ritmo.png" id="ritmo-icon">
+
+      <h1 id="title">Get started with VideoAnalysis!</h1>
+
+      <h2 class="section-title">Open a video file</h2>
       <p>
         The simplest way to open a video file is to drag and drop it anywhere on
         the interface.
@@ -98,7 +61,7 @@
         />
       </figure>
 
-      <h2>Open a folder of video files</h2>
+      <h2 class="section-title">Open a folder of video files</h2>
 
       <p>
         You can also work with an entire folder of video files. Again, the
@@ -130,7 +93,7 @@
         />
       </figure>
 
-      <h2>Cropping</h2>
+      <h2 class="section-title">Cropping</h2>
 
       <p>
         To crop the source video here is what you should do:
@@ -150,7 +113,7 @@
         />
       </figure>
 
-      <h2>Skipping</h2>
+      <h2 class="section-title">Skipping</h2>
 
       <p>In order to save time, skipping every other frame, or more, in the analysis 
         can give you a faster analysis while still getting an idea of the motion. 
