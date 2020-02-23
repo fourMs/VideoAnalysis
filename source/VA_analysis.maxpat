@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -122,8 +122,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 11.0, 61.0, 95.0, 22.0 ],
-					"text" : "mgt.rgb2luma%"
+					"patching_rect" : [ 11.0, 61.0, 82.0, 22.0 ],
+					"text" : "mgt.rgb2luma"
 				}
 
 			}

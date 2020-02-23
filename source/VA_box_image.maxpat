@@ -338,8 +338,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 53.0, 66.0, 93.0, 22.0 ],
-					"text" : "mgt.rgb2luma%"
+					"patching_rect" : [ 53.0, 66.0, 82.0, 22.0 ],
+					"text" : "mgt.rgb2luma"
 				}
 
 			}
