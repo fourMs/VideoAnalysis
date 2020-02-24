@@ -1,21 +1,15 @@
 --------------
 File structure
 --------------
-_data.txt		= Quantitative data from the analysis, see below for details
-_log.txt		= General information about the analysed file and the analysis
-_stats.txt		= Basic statistics generated from the _data.txt file
-_avg.jpg		= Average image, based on taking the average of all images in video stream
-_mavg.jpg		= Motion average image, based on taking the average of all motion images in video stream
-_mavg.jxf		= Same as above, but in binary format for import in Matlab
-_mavg.tif		= Same as above, but in raw TIFF format and without image normalization
-_mgh.jpg		= Horizontal motiongram, based on averaging over each column in each motion image
-_mgh.jxf		= Same as above, but in binary format for import in Matlab
-_mgh.tif		= Same as above, but in raw TIFF format and without image normalization
-_mgv.jpg		= Horizontal motiongram, based on averaging over each column in each motion image
-_mgv.jxf		= Same as above, but in binary format for import in Matlab
-_mgv.tif		= Same as above, but in raw TIFF format and without image normalization
-_mhi_first.jpg	= Motion history image: displaying motion average image (mavg) on top of first video frame
-_mhi_last.jpg	= Motion history image: displaying motion average image (mavg) on top of last video frame
+_data.csv				= Quantitative data from the analysis, see below for details
+_log.txt				= General information about the analysed file and the analysis
+_stats.csv				= Basic statistics generated from the _data.txt file
+-avg.jpg/png/tif		= Average image, based on taking the average of all images in video stream
+-mavg.jpg/png/tif 		= Motion average image, based on taking the average of all motion images in video stream
+-mgx.jpg/png/tif		= Horizontal motiongram, based on averaging over each column in each motion image
+-mgy.jpg/png/tif		= Horizontal motiongram, based on averaging over each column in each motion image
+-mhi_first.jpg/png/tif	= Motion history image: displaying motion average image (mavg) on top of first video frame
+-mhi_last.jpg/png/tif	= Motion history image: displaying motion average image (mavg) on top of last video frame
 
                                                                                                                             
 --------------

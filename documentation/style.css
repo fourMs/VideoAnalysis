@@ -1,0 +1,73 @@
+body {
+  background-color: #c8c8c8;
+  margin: 0;
+  padding: 0;
+  color: #004d61;
+}
+a:visited {
+  color: blue;
+}
+#menubar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #42403f;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+}
+
+#menubar li {
+  float: left;
+  font-size: 16px;
+}
+
+#menubar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#menubar li a:hover:not(.active) {
+  background-color: #5bd1d7;
+  color: #ff502f;
+}
+
+.active {
+  background-color: #ff502f;
+}
+
+#page {
+  margin: 20px;
+}
+
+#title {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 36px;
+}
+
+.section-title {
+  padding-top: 40px;
+  font-size: 26px;
+}
+
+#ritmo-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure {
+  display: block;
+  padding: 12px 0px;
+}
+
+p,
+ul,
+li {
+  font-size: 20px;
+}
