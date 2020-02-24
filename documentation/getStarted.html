@@ -48,7 +48,7 @@
       </figure>
 
       <p>
-        Alternatively you can open a video file by selecting 'File > Open...'
+        Alternatively you can open a video file by selecting <i>File > Open...</i>
         from the menu.
       </p>
 
@@ -93,6 +93,66 @@
         />
       </figure>
 
+      <h2 class="section-title">Source Display</h2>
+
+      <img src="img/SourceDisplay.png"/>
+
+      <p>
+        Within the Source Display you can find a little preview of the loaded video. 
+        You can toggle playback either by clicking on the Play icon, or by pressing the Space bar.
+        Below the Play icon you can find two yellow arrows, which you can use to nudge the playback
+        one frame forward or back. You can also do this by pressing Shift + Left arrow or Shift + 
+        Right arrow on your keyboard. Next to the Play icon you can see the Timeline. This can be used
+        to quickly skim through the video, and more importantly to select the trimming points of the 
+        analysis (see below). 
+      </p>
+
+
+      <h2 class="section-title">Colors</h2>
+
+      <img src="img/Color.png" style="max-width: 100%;"/>
+
+      <p>
+        To change the color space of your source video you have two options in VideoAnalysis.
+        To invert colors, go to <i>Color</i> in the menu and check <i>Invert colors</i>. You can 
+        also convert the video to greyscale by checking <i>Color > Greyscale</i>. Note that these
+        two options are independent from each other, so you can check either or both.
+      </p>
+
+
+      <h2 class="section-title">Trimming</h2>
+
+      <p>
+        On the Source Display you can set the in- and out-points of the analysis by selecting either
+        edge of the yellow area on the Timeline and dragging it to the desired timepoint. This will
+        affect the real-time playback as well as the analysis videos and images - you can get an idea by
+        observing the number of <i>Processed frames</i>.
+      </p>
+
+      <figure>
+        <img
+          src="img/04_trimming.png"
+          style="max-width: 100%;"
+          alt="Static Image"
+          data-alt="img/04_trimming.gif"
+        />
+      </figure>
+
+
+      <h2 class="section-title">Skipping</h2>
+
+      <p>
+        In order to save time, skipping every other frame, or more, in the analysis 
+        can give you a faster analysis while still getting an idea of the motion. 
+        You can for example set this to 2, to skip two frames before including 
+        a frame in the analysis, then skipping two again. If skipping is set to 1, then
+        the analysis will skip every other frame. You can get an idea about how it works 
+        by observing the number of <i>Processed frames</i>. Skipping frames can be a huge
+        timesaver when working with extremely long videos.
+      </p>
+
+      <img src="img/05_skipping.png" style="max-width: 100%;"/>
+
       <h2 class="section-title">Cropping</h2>
 
       <p>
@@ -113,12 +173,54 @@
         />
       </figure>
 
-      <h2 class="section-title">Skipping</h2>
+      <h2 class="section-title">The Display window</h2>
 
-      <p>In order to save time, skipping every other frame, or more, in the analysis 
-        can give you a faster analysis while still getting an idea of the motion. 
-        You can for example set this to 2, to skip two frames before including 
-        a frame in the analysis, then skipping two again.</p>
+      <img src="img/DisplayWindow.png" style="max-width: 100%;"/>
+
+      <p>
+        The real-time preview of the analysis can be observed in the Display window. It consists of
+        the bounding box video, the history video and the motion video, respectively. You can toggle
+        these independently from the <i>Display</i> menu, with the additional option to set the window
+        into floating mode. The Display always resizes automatically when you are changing the cropping
+        dimension. To adjust the scale of the Display window use dial in the lower-right corner of the interface.
+      </p>
+
+      <img src="img/DisplayScale.png" style="max-width: 100%;"/>
+
+      <h2 class="section-title">Export options</h2>
+
+      <img src="img/ExportOptions.png" style="max-width: 100%;"/>
+
+      <p>
+        When you are satisfied with the current settings it is time to decide what kind of images and videos to render.
+        You can toggle these in the <i>Export options</i> menu. Additionally you can also select which filetype you want
+        to use for your images.
+      </p>
+
+      <h2 class="section-title">Export</h2>
+
+      <p>
+        To perform the analysis, render all your images, videos, as well as a statistical analysis of motion and a log 
+        file, just press the button which says 'Click to export data'. All files will be placed in the same folder as 
+        your source video.
+      </p>
+
+      <img src="img/ExportButton.png" style="max-width: 100%;"/>
+
+      <h2 class="section-title">Settings</h2>
+
+      <img src="img/Settings.png" style="max-width: 100%;"/>
+
+      <p>
+        When working with a folders, by default VideoAnalysis keeps all settings local to each video. You can change
+        this behavior by selecting <i>Settings > Use same settings for each file</i>. In this case the last settings
+        (ie. the ones you had at the moment of changing to this mode) will apply to each video file during the batch 
+        export. To go back to using independent settings, select <i>Remember settings for each file</i>. It is also 
+        possible to save or load all settings into a .json file. This can make it easy to pick up your work where
+        you left it, or to share your settings with other users.
+      </p>
+
+
 
     </div>
     <script src="js/script.js"></script>
