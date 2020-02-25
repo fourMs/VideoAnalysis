@@ -4,16 +4,11 @@ Non-realtime video analysis, exporting motiongrams and various quantitative feat
 
 ## Features
 
-- Imports a folder of video files for batch processing
+- Create various types of visualizations from a video file
+- Runs on individual files or complete folders of files
 - Realtime previewing of video, motion image, motiongrams and analysis data
-- Outputs horizontal and vertical motiongrams
-- The output files are saved in the location of, and names based on, the original video file.
-- Outputs a text file with the following data:
-
-    - The first column contains a time stamp.
-    - Columns 2 through 10 contains filtered data
-    - Columns 11 through 19 contains unfiltered data
-    - Xposition, Yposition, Xvelocity, Yvelocity, absolute velocity, direction, absolute acceleration, change in direction, Quantity of Motion
+- Outputs horizontal and vertical motiongrams, motion videos and average images
+- Outputs a text file with some motion features: quantity of motion, centroid of motion
 
 Please see the [tutorial](https://github.com/fourMs/VideoAnalysis/wiki) for more information.
 
