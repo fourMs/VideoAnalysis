@@ -27,7 +27,7 @@ VideoAnalysis is still aimed to be a complete, standalone and user-frirendly sol
 
 ## Credits
 
-Main developers: [Alexander Refsum Jensenius](http://people.uio.no/alexanje), [Bálint Laczkó](https://github.com/balintlaczko) and [Aleksander Tidemann](https://github.com/AleksanderTidemann).
+Main developers: [Alexander Refsum Jensenius](http://people.uio.no/alexanje), [Bálint Laczkó](https://github.com/balintlaczko), [Aleksander Tidemann](https://github.com/AleksanderTidemann), [Anders Tveit](https://anderstveit.com/wordpress/).
 
 The software is currently maintained by the [fourMs lab](https://github.com/fourMs) at [RITMO Centre for Interdisciplinary Studies in Rhythm, Time and Motion](https://www.uio.no/ritmo/english/) at the University of Oslo.
 
