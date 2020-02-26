@@ -1,20 +1,19 @@
 # VideoAnalysis
 
-Non-realtime video analysis, exporting motiongrams and various quantitative features of movement in the video file.
+A standalone application for creating visualizations and extract motion features from video files. 
 
 ## Features
 
-- Create various types of visualizations from a video file
-- Runs on individual files or complete folders of files
-- Realtime previewing of video, motion image, motiongrams and analysis data
-- Outputs horizontal and vertical motiongrams, motion videos and average images
-- Outputs a text file with some motion features: quantity of motion, centroid of motion
+- Create various types of visualizations from a video file: motiongrams, motion images, motion history images, etc.
+- Open individual video files or batch-process folders of files
+- Realtime preview of visualizations
+- Extract some basic motion features: quantity of motion, centroid of motion, area of motion
 
 Please see the [tutorial](https://github.com/fourMs/VideoAnalysis/wiki) for more information.
 
 ## Demonstration
 
-See [this video](https://www.youtube.com/embed/vvuiir2vDfQ) for a demonstrating of how the program works. 
+See [this video](https://www.youtube.com/embed/vvuiir2vDfQ) for a demonstration of how the program works. 
 
 
 ## History
