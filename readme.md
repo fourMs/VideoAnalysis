@@ -2,6 +2,8 @@
 
 A standalone application for creating visualizations and extract motion features from video files. 
 
+![VideoAnalysis](https://github.com/fourMs/VideoAnalysis/raw/master/documentation/img/ExportButton.png)
+
 ## Features
 
 - Create various types of visualizations from a video file: motiongrams, motion images, motion history images, etc.
