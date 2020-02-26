@@ -1,0 +1,1 @@
+xattr -cr /$(dirname "$BASH_SOURCE")/VideoAnalysis.app
