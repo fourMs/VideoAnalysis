@@ -15,7 +15,7 @@ Please see the [tutorial](https://github.com/fourMs/VideoAnalysis/wiki) for more
 
 ## History
 
-This software project was started by [Alexander Refsum Jensenius](http://people.uio.no/alexanje) in 2003, first in the form of the [Musical Gestures Toolbox for Max](http://www.uio.no/english/research/groups/fourms/downloads/software/musicalgesturestoolbox/). The toolbox later became integrated as the first collection of video modules in the [Jamoma](http://www.jamoma.org) project. 
+This software project was started by [Alexander Refsum Jensenius](http://people.uio.no/alexanje) in 2003, first in the form of the [Musical Gestures Toolbox for Max](https://www.uio.no/ritmo/english/research/labs/fourms/downloads/software/musicalgesturestoolbox/mgt-max/). The toolbox later became integrated as the first collection of video modules in the [Jamoma](http://www.jamoma.org) project. 
 
 It turned out that many people found the tools for video visualization useful, but they did not want to invest time in learning how to develop in Max. This led to the development of the standalone VideoAnalysis application, based on modules from the MGT. Over the years, it has been used by a number of researchers and practictioners in fields such as music, dance, medicine, and physiotherapy. 
 
