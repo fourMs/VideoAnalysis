@@ -24,11 +24,11 @@ This software project was started by [Alexander Refsum Jensenius](http://people.
 
 It turned out that many people found the tools for video visualization useful, but they did not want to invest time in learning how to develop in Max. This led to the development of the standalone VideoAnalysis application, based on modules from the MGT. Over the years, it has been used by a number of researchers and practictioners in fields such as music, dance, medicine, and physiotherapy. 
 
-VideoAnalysis is still aimed to be a complete, standalone and user-frirendly solution. If you want more flexibility, you should check out [Jamoma](http://www.jamoma.org) (for Max), or the [Musical Gestures Toolbox for Matlab](https://github.com/fourMs/MGT-matlab/) or [Musical Gestures Toolbox for Python](https://github.com/fourMs/MGT-python).
+VideoAnalysis is still aimed to be a complete, standalone and user-friendly solution for video analysis and visualization. If you want more flexibility, you should check out [Jamoma](http://www.jamoma.org) (for Max) if you are interested in realtime analysis. For more powerful analysis tools, take a look at the [Musical Gestures Toolbox for Matlab](https://github.com/fourMs/MGT-matlab/) or [Musical Gestures Toolbox for Python](https://github.com/fourMs/MGT-python).
 
 ## Credits
 
-Main developers: [Alexander Refsum Jensenius](http://people.uio.no/alexanje), [Bálint Laczkó](https://github.com/balintlaczko), [Aleksander Tidemann](https://github.com/AleksanderTidemann), [Anders Tveit](https://anderstveit.com/wordpress/).
+Developers: [Alexander Refsum Jensenius](http://people.uio.no/alexanje), [Bálint Laczkó](https://github.com/balintlaczko), [Aleksander Tidemann](https://github.com/AleksanderTidemann), [Anders Tveit](https://anderstveit.com/wordpress/).
 
 The software is currently maintained by the [fourMs lab](https://github.com/fourMs) at [RITMO Centre for Interdisciplinary Studies in Rhythm, Time and Motion](https://www.uio.no/ritmo/english/) at the University of Oslo.
 
