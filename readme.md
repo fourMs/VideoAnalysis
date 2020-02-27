@@ -13,11 +13,6 @@ A standalone application for creating visualizations and extract motion features
 
 Please see the [tutorial](https://github.com/fourMs/VideoAnalysis/wiki) for more information.
 
-## Demonstration
-
-See [this video](https://www.youtube.com/embed/vvuiir2vDfQ) for a demonstration of how the program works. 
-
-
 ## History
 
 This software project was started by [Alexander Refsum Jensenius](http://people.uio.no/alexanje) in 2003, first in the form of the [Musical Gestures Toolbox for Max](http://www.uio.no/english/research/groups/fourms/downloads/software/musicalgesturestoolbox/). The toolbox later became integrated as the first collection of video modules in the [Jamoma](http://www.jamoma.org) project. 
@@ -28,7 +23,7 @@ VideoAnalysis is still aimed to be a complete, standalone and user-friendly solu
 
 ## Credits
 
-Developers: [Alexander Refsum Jensenius](http://people.uio.no/alexanje), [Bálint Laczkó](https://github.com/balintlaczko), [Aleksander Tidemann](https://github.com/AleksanderTidemann), [Anders Tveit](https://anderstveit.com/wordpress/).
+Developers: [Alexander Refsum Jensenius](http://people.uio.no/alexanje), [Bálint Laczkó](https://github.com/balintlaczko), [Aleksander Tidemann](https://github.com/AleksanderTidemann), [Anders Tveit](https://anderstveit.com/wordpress/), [Kristian Nymoen](https://github.com/krisny).
 
 The software is currently maintained by the [fourMs lab](https://github.com/fourMs) at [RITMO Centre for Interdisciplinary Studies in Rhythm, Time and Motion](https://www.uio.no/ritmo/english/) at the University of Oslo.
 
