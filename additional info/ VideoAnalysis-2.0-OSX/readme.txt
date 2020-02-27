@@ -1,5 +1,5 @@
-Video Analysis 2.0 OSX
-Readme
+Readme VideoAnalysis 2.0 OSX
+============================
 
 Step 1 - Make sure that the "run_me_first.command" and "VideoAnalysis.app" files are located in the same folder. 
 
@@ -11,15 +11,15 @@ Step 3.1 - If the above step fails, and you are not able to open the "run_me_fir
 
 Step 3.2 - If both of the above steps fail, and you are still not able to run the “run_me_first.command” file, open your Terminal window through Applications -> Utilities -> Terminal. In the Terminal window write the following script:
 
-xattr -cr /"path to application folder"/VideoAnalysis.app
+    xattr -cr /"path to application folder"/VideoAnalysis.app
 
 So for instance:
 
-xattr -cr /Macintosh+/Downloads/VideoAnalysis-2.0-OSX/VideoAnalysis.app
+    xattr -cr /Macintosh+/Downloads/VideoAnalysis-2.0-OSX/VideoAnalysis.app
 
 To access the path to the VideoAnalysis folder you can simply drag and drop the folder into the terminal window after the "xattr -cr" command, like so:
 
-xattr -cr "drag the folder in here!"/VideoAnalysis.app
+    xattr -cr "drag the folder in here!"/VideoAnalysis.app
 
 Remember to add “/VideoAnalysis.app” at the very end. Click enter and wait until the program has finished.
 
