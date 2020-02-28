@@ -1,0 +1,13 @@
+build checklist
+---------------
+
+1. make into project
+2. add the following files to the project:
+	- variable_descriptors.txt
+	- menuind2exportoptions.json 
+	- opt2log.json
+3. make build, app name should be 'VideoAnalysis'
+4. copy 'documentation' folder next to .mxf file (on Windows: same folder as 'resources', on MacOS: in 'Resources')
+5.  a) copy ./source/VA_maxinterface.json into resources/interfaces
+	b) delete resources/interfaces/maxinterface.json
+	c) rename resources/interfaces/VA_maxinterface.json to resources/interfaces/maxinterface.json
