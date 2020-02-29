@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 44.0, 94.0, 452.0, 715.0 ],
+		"rect" : [ 44.0, 94.0, 459.0, 649.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 72.0, 103.0, 142.0, 22.0 ],
+					"text" : "r write_to_file_firstframe"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -56,7 +68,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 322.0, 393.0, 127.0, 48.0 ],
+					"patching_rect" : [ 324.0, 381.5, 127.0, 48.0 ],
 					"text" : "motion image filtered  for analysis (never inverted)"
 				}
 
@@ -91,8 +103,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 103.5, 137.0, 161.0, 20.0 ],
-					"text" : "reset when a video is loaded"
+					"patching_rect" : [ 118.0, 134.0, 196.0, 20.0 ],
+					"text" : "reset right before framedump starts"
 				}
 
 			}
@@ -103,20 +115,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "reset" ],
-					"patching_rect" : [ 59.5, 137.0, 42.0, 22.0 ],
+					"patching_rect" : [ 72.0, 134.0, 42.0, 22.0 ],
 					"text" : "t reset"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 59.5, 108.0, 67.0, 22.0 ],
-					"text" : "r timescale"
 				}
 
 			}
@@ -152,7 +152,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.5, 681.0, 130.0, 22.0 ],
+					"patching_rect" : [ 7.5, 612.0, 130.0, 22.0 ],
 					"text" : "mgt.write-to-file motion"
 				}
 
@@ -174,7 +174,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 75.5, 554.5, 81.0, 20.0 ],
+					"patching_rect" : [ 72.0, 495.5, 81.0, 20.0 ],
 					"text" : "motion image"
 				}
 
@@ -283,7 +283,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 11.5, 595.0, 163.0, 22.0 ],
+					"patching_rect" : [ 7.5, 526.0, 163.0, 22.0 ],
 					"text" : "r export_motion_image_video"
 				}
 
@@ -296,7 +296,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 11.5, 623.0, 20.0, 20.0 ]
+					"patching_rect" : [ 7.5, 554.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -309,7 +309,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 11.5, 651.0, 33.0, 21.0 ],
+					"patching_rect" : [ 7.5, 582.0, 33.0, 21.0 ],
 					"text" : "gate"
 				}
 
@@ -322,7 +322,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 48.5, 552.0, 25.0, 25.0 ]
+					"patching_rect" : [ 45.0, 493.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -459,15 +459,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"source" : [ "obj-26", 0 ]
+					"destination" : [ "obj-38", 0 ],
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
-					"source" : [ "obj-27", 0 ]
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-30", 0 ]
 				}
 
 			}
