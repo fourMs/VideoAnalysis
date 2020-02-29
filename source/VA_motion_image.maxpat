@@ -56,8 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 322.0, 393.0, 120.0, 48.0 ],
-					"presentation_linecount" : 3,
+					"patching_rect" : [ 322.0, 393.0, 127.0, 48.0 ],
 					"text" : "motion image filtered  for analysis (never inverted)"
 				}
 
@@ -129,7 +128,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 12.0, 475.0, 209.0, 22.0 ],
+					"patching_rect" : [ 11.5, 428.0, 209.0, 22.0 ],
 					"text" : "VA_motion_image_with_centroid_box"
 				}
 
@@ -164,7 +163,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 39.0, 511.0, 119.0, 20.0 ],
+					"patching_rect" : [ 38.5, 463.0, 119.0, 20.0 ],
 					"text" : "motion image history"
 				}
 
@@ -335,7 +334,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.0, 511.0, 25.0, 25.0 ]
+					"patching_rect" : [ 11.5, 463.0, 25.0, 25.0 ]
 				}
 
 			}
