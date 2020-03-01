@@ -176,6 +176,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-25",
@@ -889,7 +890,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 945.0, 89.0, 79.0, 22.0 ],
+					"patching_rect" : [ 945.0, 109.0, 79.0, 22.0 ],
 					"text" : "s framedump"
 				}
 
@@ -1308,7 +1309,9 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
-					"source" : [ "obj-24", 6 ]
+					"source" : [ "obj-24", 6 ],
+					"watchpoint_flags" : 2,
+					"watchpoint_id" : 2
 				}
 
 			}

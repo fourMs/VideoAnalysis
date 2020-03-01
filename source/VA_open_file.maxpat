@@ -84,7 +84,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 86.0, 108.0, 322.0, 494.0 ],
+						"rect" : [ 563.0, 181.0, 322.0, 415.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -113,17 +113,6 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 123.0, 333.811657637357712, 83.0, 22.0 ],
-									"text" : "s reset_snake"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -151,10 +140,10 @@
 									"id" : "obj-8",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "int", "bang", "int" ],
-									"patching_rect" : [ 93.0, 262.0, 79.0, 22.0 ],
-									"text" : "t i b i"
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "int" ],
+									"patching_rect" : [ 93.0, 262.0, 41.5, 22.0 ],
+									"text" : "t i i"
 								}
 
 							}
@@ -167,7 +156,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 57.0, 366.0, 27.0, 22.0 ],
+									"patching_rect" : [ 57.0, 262.0, 27.0, 22.0 ],
 									"text" : "t 0"
 								}
 
@@ -180,7 +169,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 57.0, 433.0, 90.0, 22.0 ],
+									"patching_rect" : [ 57.0, 368.0, 90.0, 22.0 ],
 									"text" : "s to-folder-list"
 								}
 
@@ -206,7 +195,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 91.5, 366.0, 82.0, 22.0 ],
+									"patching_rect" : [ 93.0, 338.0, 82.0, 22.0 ],
 									"text" : "s current_item"
 								}
 
@@ -219,7 +208,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 153.0, 304.0, 83.0, 22.0 ],
+									"patching_rect" : [ 116.0, 310.0, 83.0, 22.0 ],
 									"text" : "s to-folder-list"
 								}
 
@@ -389,7 +378,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
-									"source" : [ "obj-8", 2 ]
+									"source" : [ "obj-8", 1 ]
 								}
 
 							}
@@ -397,13 +386,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-31", 0 ],
 									"source" : [ "obj-8", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-8", 1 ]
 								}
 
 							}
