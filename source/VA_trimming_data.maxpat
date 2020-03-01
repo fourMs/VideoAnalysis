@@ -672,7 +672,6 @@
 														"tags" : "",
 														"style" : "",
 														"subpatcher_template" : "",
-														"visible" : 1,
 														"boxes" : [ 															{
 																"box" : 																{
 																	"id" : "obj-1",
@@ -963,7 +962,6 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-30",
@@ -16797,8 +16795,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 206.75, 170.0, 32.0, 22.0 ],
-					"text" : "gate"
+					"patching_rect" : [ 206.75, 170.0, 52.0, 22.0 ],
+					"text" : "gate 1 0"
 				}
 
 			}
