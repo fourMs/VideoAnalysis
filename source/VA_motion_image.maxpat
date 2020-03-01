@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 44.0, 94.0, 459.0, 673.0 ],
+		"rect" : [ 82.0, 105.0, 459.0, 673.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -208,7 +208,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 122.0, 8.5, 150.0, 62.0 ],
+					"patching_rect" : [ 141.0, 13.0, 150.0, 62.0 ],
 					"text" : "Output order:\n1st - motion image filtered\n2nd - motion image\n3rd - motion image history"
 				}
 

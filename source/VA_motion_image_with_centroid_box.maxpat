@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 340.0, 128.0, 60.0, 22.0 ],
+					"text" : "zl change"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -79,7 +91,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 340.0, 128.0, 38.0, 22.0 ],
+					"patching_rect" : [ 340.0, 99.0, 38.0, 22.0 ],
 					"text" : "zl reg"
 				}
 
@@ -252,7 +264,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 195.402953999999909, 120.0, 81.0, 22.0 ],
+									"patching_rect" : [ 160.999999999999886, 123.0, 81.0, 22.0 ],
 									"text" : "r reset_snake"
 								}
 
@@ -266,20 +278,6 @@
 									"outlettype" : [ "reset" ],
 									"patching_rect" : [ 160.999999999999886, 152.0, 42.0, 22.0 ],
 									"text" : "t reset"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Verdana",
-									"fontsize" : 11.0,
-									"id" : "obj-31",
-									"maxclass" : "newobj",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 160.999999999999886, 90.0, 89.0, 22.0 ],
-									"text" : "r current_item"
 								}
 
 							}
@@ -502,13 +500,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-24", 0 ],
 									"source" : [ "obj-25", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-24", 0 ],
-									"source" : [ "obj-31", 0 ]
 								}
 
 							}
@@ -16101,13 +16092,20 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 340.0, 37.0, 63.0, 21.0 ],
+					"patching_rect" : [ 340.0, 67.0, 63.0, 21.0 ],
 					"text" : "r crop-dim"
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-10", 0 ]
@@ -16181,7 +16179,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-18", 0 ]
 				}
 

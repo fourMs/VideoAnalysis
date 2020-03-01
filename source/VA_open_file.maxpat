@@ -113,6 +113,17 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 123.0, 333.811657637357712, 83.0, 22.0 ],
+									"text" : "s reset_snake"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -130,7 +141,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 17.5, 32.0, 157.0, 22.0 ],
+									"patching_rect" : [ 21.0, 35.0, 157.0, 22.0 ],
 									"text" : "r bang_framedump_counter"
 								}
 
@@ -140,10 +151,10 @@
 									"id" : "obj-8",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "int", "int" ],
-									"patching_rect" : [ 132.0, 273.0, 34.5, 22.0 ],
-									"text" : "t i i"
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "bang", "int" ],
+									"patching_rect" : [ 93.0, 262.0, 79.0, 22.0 ],
+									"text" : "t i b i"
 								}
 
 							}
@@ -195,7 +206,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 132.0, 336.0, 82.0, 22.0 ],
+									"patching_rect" : [ 91.5, 366.0, 82.0, 22.0 ],
 									"text" : "s current_item"
 								}
 
@@ -208,7 +219,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 147.5, 306.0, 83.0, 22.0 ],
+									"patching_rect" : [ 153.0, 304.0, 83.0, 22.0 ],
 									"text" : "s to-folder-list"
 								}
 
@@ -378,7 +389,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
-									"source" : [ "obj-8", 1 ]
+									"source" : [ "obj-8", 2 ]
 								}
 
 							}
@@ -386,6 +397,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-31", 0 ],
 									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-8", 1 ]
 								}
 
 							}
