@@ -34,8 +34,8 @@
       </figure>
 
       <p>
-        You can also open a video file by clicking on the 'File' button on the
-        'Add Video' panel.
+        You can also open a video file by clicking on the <b>File</b> button on the
+        <b>Add Video</b> panel.
       </p>
 
       <figure>
@@ -48,18 +48,11 @@
       </figure>
 
       <p>
-        Alternatively you can open a video file by selecting <i>File > Open...</i>
+        Alternatively you can open a video file by selecting <i>File > Open file...</i>
         from the menu.
       </p>
 
-      <figure>
-        <img
-          src="img/01_open_file_menu.png"
-        
-          alt="Static Image"
-          data-alt="img/01_open_file_menu.gif"
-        />
-      </figure>
+      <img src="img/01_open_file_menu.png"/>
 
       <h2 class="section-title">Open a folder of video files</h2>
 
@@ -80,8 +73,8 @@
       </figure>
 
       <p>
-        You can also load a folder by clicking on the 'Folder' button on the
-        'Add Video' panel.
+        You can also load a folder by clicking on the <b>Folder</b> button on the
+        <b>Add Video</b> panel.
       </p>
 
       <figure>
@@ -93,16 +86,23 @@
         />
       </figure>
 
+      <p>
+        Alternatively you can open a folder by selecting <i>File > Open folder...</i>
+        from the menu.
+      </p>
+
+      <img src="img/02_open_folder_menu.png"/>
+
       <h2 class="section-title">Source Display</h2>
 
       <img src="img/SourceDisplay.png"/>
 
       <p>
-        Within the Source Display you can find a little preview of the loaded video. 
+        Within the <b>Source Display</b> you can find a little preview of the loaded video. 
         You can toggle playback either by clicking on the Play icon, or by pressing the Space bar.
         Below the Play icon you can find two yellow arrows, which you can use to nudge the playback
-        one frame forward or back. You can also do this by pressing Shift + Left arrow or Shift + 
-        Right arrow on your keyboard. Next to the Play icon you can see the Timeline. This can be used
+        one frame forward or back. You can also do this by pressing <code>Shift + Left</code> arrow or <code>Shift + Right</code> 
+        arrow on your keyboard. Next to the Play icon you can see the <b>Timeline</b>. This can be used
         to quickly skim through the video, and more importantly to select the trimming points of the 
         analysis (see below). 
       </p>
@@ -123,10 +123,10 @@
       <h2 class="section-title">Trimming</h2>
 
       <p>
-        On the Source Display you can set the in- and out-points of the analysis by selecting either
-        edge of the yellow area on the Timeline and dragging it to the desired timepoint. This will
+        On the <b>Source Display</b> you can set the in- and out-points of the analysis by selecting either
+        edge of the yellow area on the <b>Timeline</b> and dragging it to the desired timepoint. This will
         affect the real-time playback as well as the analysis videos and images - you can get an idea by
-        observing the number of <i>Processed frames</i>.
+        observing the number of <b>Processed frames</b>.
       </p>
 
       <figure>
@@ -147,7 +147,7 @@
         You can for example set this to 2, to skip two frames before including 
         a frame in the analysis, then skipping two again. If skipping is set to 1, then
         the analysis will skip every other frame. You can get an idea about how it works 
-        by observing the number of <i>Processed frames</i>. Skipping frames can be a huge
+        by observing the number of <b>Processed frames</b>. Skipping frames can be a huge
         timesaver when working with extremely long videos.
       </p>
 
@@ -158,8 +158,8 @@
       <p>
         To crop the source video here is what you should do:
         <ol>
-          <li>In the Cropping panel activate cropping with the toggle.</li>
-          <li>In the Source display draw a rectangle over the area you wish to keep.</li>
+          <li>In the <b>Cropping</b> panel activate cropping with the toggle.</li>
+          <li>In the <b>Source Display</b> draw a rectangle over the area you wish to keep.</li>
           <li>Optionally you can also finetune the position of this cropping rectangle with the number boxes.</li>
         </ol>
       </p>
@@ -178,11 +178,11 @@
       <img src="img/DisplayWindow.png"/>
 
       <p>
-        The real-time preview of the analysis can be observed in the Display window. It consists of
+        The real-time preview of the analysis can be observed in the <b>Display</b> window. It consists of
         the bounding box video, the history video and the motion video, respectively. You can toggle
         these independently from the <i>Display</i> menu, with the additional option to set the window
-        into floating mode. The Display always resizes automatically when you are changing the cropping
-        dimension. To adjust the scale of the Display window use dial in the lower-right corner of the interface.
+        into floating mode. The <b>Display</b> always resizes automatically when you are changing the cropping
+        dimension. To adjust the scale of the <b>Display</b> window use dial in the lower-right corner of the interface.
       </p>
 
       <img src="img/DisplayScale.png"/>
@@ -212,13 +212,25 @@
       <img src="img/Settings.png"/>
 
       <p>
-        When working with a folders, by default VideoAnalysis keeps all settings local to each video. You can change
+        When working with folders, by default VideoAnalysis keeps all settings local to each video. You can change
         this behavior by selecting <i>Settings > Use same settings for each file</i>. In this case the last settings
         (ie. the ones you had at the moment of changing to this mode) will apply to each video file during the batch 
         export. To go back to using independent settings, select <i>Remember settings for each file</i>. It is also 
         possible to save or load all settings into a .json file. This can make it easy to pick up your work where
         you left it, or to share your settings with other users.
       </p>
+
+      <h2 class="section-title">Report a problem</h2>
+
+      <img src="img/report.png"/>
+
+      <p>
+        Have you experienced errors or any strange behavior from VideoAnalysis? If you take a moment and report it to
+        us, you can greatly contribute to the development of this software. Clicking on <i>Help > Report a problem...</i>
+        opens your default internet browser and takes you straight to the Issues page at our Github repository for VideoAnalysis.
+        Here you can click on the (green) <b>New issue</b> button, and tell us about the problem.
+      </p>
+
 
 
 
