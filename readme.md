@@ -8,8 +8,9 @@ A standalone application for creating visualizations and extract motion features
 
 - Create various types of visualizations from a video file: motiongrams, motion images, motion history images, etc.
 - Open individual video files or batch-process folders of files
-- Realtime preview of visualizations
+- Basic pre-processing: cropping, trimming
 - Extract some basic motion features: quantity of motion, centroid of motion, area of motion
+- Realtime preview of visualizations
 
 Please see the [tutorial](https://github.com/fourMs/VideoAnalysis/wiki) for more information.
 
