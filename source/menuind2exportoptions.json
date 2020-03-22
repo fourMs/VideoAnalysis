@@ -1,7 +1,8 @@
 {
 	"1" : "export_motiongrams",
 	"2" : "export_average_images",
-	"3" : "export_motion_video",
-	"4" : "export_bounding_box_video",
-	"5" : "export_history_video"
+	"3" : "export_videograms",
+	"4" : "export_motion_video",
+	"5" : "export_bounding_box_video",
+	"6" : "export_history_video"
 }

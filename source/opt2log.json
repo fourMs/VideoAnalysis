@@ -2,6 +2,7 @@
 	"log" : {
 		"export_motiongrams" : "on",
 		"export_average_images" : "on",
+		"export_videograms" : "off",
 		"export_motion_video" : "off",
 		"export_bounding_box_video" : "off",
 		"export_history_video" : "off"
