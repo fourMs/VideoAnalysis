@@ -79,7 +79,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 325.0, 397.0, 64.0, 20.0 ],
+					"patching_rect" : [ 324.0, 397.0, 64.0, 20.0 ],
 					"text" : "box image"
 				}
 
