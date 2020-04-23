@@ -2,7 +2,7 @@
 
 A standalone application for creating visualizations and extract motion features from video files. 
 
-![VideoAnalysis](https://github.com/fourMs/VideoAnalysis/raw/master/documentation/img/ExportButton.png)
+![VideoAnalysis](https://github.com/fourMs/VideoAnalysis/raw/master/build_info/v.2.1-interface.png)
 
 ## Features
 
