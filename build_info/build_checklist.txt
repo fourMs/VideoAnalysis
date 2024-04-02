@@ -6,6 +6,7 @@ build checklist
 	- variable_descriptors.txt
 	- menuind2exportoptions.json 
 	- opt2log.json
+2b. copy "ritmo.icns" and "ritmo.ico" to project/patchers
 3. make build, app name should be 'VideoAnalysis'
 4. copy 'documentation' folder next to .mxf file (on Windows: same folder as 'resources', on MacOS: in 'Resources')
 5.  a) copy ./source/VA_maxinterface.json into resources/interfaces
