@@ -2,3 +2,4 @@
 *.zip
 .DS_Store
 source/motion-test.maxpat
+build/
